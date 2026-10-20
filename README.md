@@ -153,7 +153,7 @@ If you use this code in your research, please cite:
   author    = {Asif Iqbal Bhatti},
   title     = {Ultra-Fast Energy-Above-Hull via LP (HiGHS C++) for High-Entropy Alloys Screening},
   year      = {2025},
-  url       = {https://github.com/Asif-Iqbal-Bhatti/Ultra-fast-Hull-Energy-via-LP},
+  url       = {https://github.com/Asif-Iqbal-Bhatti/FULLMAP},
 }
 ```
 
