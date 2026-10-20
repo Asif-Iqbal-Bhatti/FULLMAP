@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ultra-Fast Ehull Algorithm – HE-DRX</title>
+<title>Ultra-Fast Ehull Algorithm – High-Entropy Alloys</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
   *{box-sizing:border-box;margin:0;padding:0}
@@ -83,7 +83,7 @@
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Ultra-Fast Energy-Above-Hull (Ehull)<br>for High-Entropy DRX Cathodes</h1>
+  <h1>Ultra-Fast Energy-Above-Hull (Ehull)<br>for High-Entropy Alloys (HEAs)</h1>
   <p>A vectorised, LP-batched, MPI-parallel algorithm that replaces PyMatGen's per-entry PhaseDiagram with system-level batch LP solving — enabling <strong style="color:#34d399">~2 million Ehull calculations</strong> at a fraction of the cost.</p>
 </div>
 
@@ -126,7 +126,7 @@
     <div class="step-num">1</div>
     <div class="step-body">
       <h4>Load &amp; Process Reference Database</h4>
-      <p>All Materials Project reference phases for the 19-element HE-DRX space
+      <p>All Materials Project reference phases for the multi-element High-Entropy Alloys space
         (<code>Li-Al-Co-Cr-F-Fe-Ga-Mg-Mn-Mo-Nb-Ni-O-Sb-Sn-Ti-V-Zn-Zr</code>) are
         loaded from a local pickle and corrected with <code>MaterialsProject2020Compatibility</code>.
         Elemental chemical potentials <code>μ[El]</code> are extracted once — these serve
@@ -139,7 +139,7 @@
     <div class="step-num">2</div>
     <div class="step-body">
       <h4>Group Targets by Chemical System</h4>
-      <p>Each HE-DRX cathode is assigned a <em>chemical-system key</em>
+      <p>Each High-Entropy Alloy composition is assigned a <em>chemical-system key</em>
         (alphabetically sorted element set, e.g. <code>Co-Li-Mn-Ni-O-Ti</code>).
         Entries are grouped into system buckets. Only systems with at least one reference
         phase proceed. Duplicate stoichiometries are deduplicated — only the lowest-FE
@@ -278,7 +278,7 @@
   <p style="font-size:.72rem;color:#475569;margin-top:10px">Estimates based on algorithmic complexity analysis. Actual speedup depends on system diversity and hardware.</p>
 </div>
 
-<footer>HE-DRX Cathode Design Space Calculation · Ultra-Fast Ehull via LP (HiGHS C++) · VUB FULMAP Group</footer>
+<footer>High-Entropy Alloys Design Space Calculation · Ultra-Fast Ehull via LP (HiGHS C++) · VUB FULMAP Group</footer>
 
 </body>
 </html>

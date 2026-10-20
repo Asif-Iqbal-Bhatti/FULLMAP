@@ -1,6 +1,6 @@
 #  Ultra-Fast Energy-Above-Hull via Linear Programming (HiGHS C++)
 
-> **Optimised for High-Entropy Disordered Rock-Salt (HE-DRX) cathode screening — scales to ≥ 2 million entries on a workstation.**
+> **Optimised for High-Entropy Alloys (HEAs) screening — scales to ≥ 2 million entries on a workstation.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -10,8 +10,8 @@
 ---
 
 ## 🌐 Algorithm Schematic
+<img width="1751" height="1310" alt="image" src="https://github.com/user-attachments/assets/6c1933bf-191f-4ec0-b061-538404b5e21d" />
 
-👉 **[View the full interactive pipeline visualization](https://asif-iqbal-bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/)**
 
 ---
 
@@ -94,7 +94,7 @@ Edit the top of `4_get_ehull_mpi_fast_VER3.py`:
 
 ```python
 REF_DB_PATH   = 'newAPI_Entries_vs_chemsys_list_CSE_unprocessed.pkl'  # MP reference database
-TARGET_JSON   = '../HEDRX_processed.json'   # your DFT entries (ComputedStructureEntry)
+TARGET_JSON   = '../HEA_processed.json'   # your DFT entries (ComputedStructureEntry)
 OUT_PARQUET   = Path("CATHODE_VOLTAGE_DFT") / "CATHODE_POT_DFT.parquet"
 CPUS          = 16          # parallel workers
 FE_CUTOFF     = 2.0         # eV/atom — filter unstable refs
@@ -138,9 +138,9 @@ python 4_get_ehull_mpi_fast_VER3.py
 
 ---
 
-## 🧪 Application: HE-DRX Cathode Design
+## 🧪 Application: High-Entropy Alloys (HEAs) Design
 
-This tool is part of a high-throughput DFT + MLIP workflow to identify thermodynamically stable **High-Entropy Disordered Rock-Salt (HE-DRX)** cathode materials containing 5+ transition metals. The 19-element design space yields a combinatorial explosion of compositions — making fast Ehull screening the critical bottleneck that this code solves.
+This tool is part of a high-throughput DFT + MLIP workflow to identify thermodynamically stable **High-Entropy Alloys (HEAs)** containing 5+ transition metals. The multi-element design space yields a combinatorial explosion of compositions — making fast Ehull screening the critical bottleneck that this code solves.
 
 ---
 
@@ -151,7 +151,7 @@ If you use this code in your research, please cite:
 ```bibtex
 @software{bhatti2025ultrafast,
   author    = {Asif Iqbal Bhatti},
-  title     = {Ultra-Fast Energy-Above-Hull via LP (HiGHS C++) for HE-DRX Cathode Screening},
+  title     = {Ultra-Fast Energy-Above-Hull via LP (HiGHS C++) for High-Entropy Alloys Screening},
   year      = {2025},
   url       = {https://github.com/Asif-Iqbal-Bhatti/Ultra-fast-Hull-Energy-via-LP},
 }
@@ -159,7 +159,7 @@ If you use this code in your research, please cite:
 
 ---
 
-High-Entropy DRX Cathode Design Space Calculation
+High-Entropy Alloys Design Space Calculation
 
 ---
 
