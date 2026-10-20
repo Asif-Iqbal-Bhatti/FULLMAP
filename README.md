@@ -8,13 +8,6 @@
 [![PyMatGen](https://img.shields.io/badge/Uses-PyMatGen-red)](https://pymatgen.org/)
 
 ---
-
-## 🌐 Algorithm Schematic
-<img width="1751" height="1310" alt="image" src="https://github.com/user-attachments/assets/6c1933bf-191f-4ec0-b061-538404b5e21d" />
-
-
----
-
 ## 🔬 What is this?
 
 This code computes the **energy above the convex hull (Ehull)** — the key thermodynamic stability metric — for millions of DFT-relaxed high-entropy oxide compositions in the n-element chemical space:
